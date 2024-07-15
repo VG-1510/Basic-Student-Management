@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+        <div class="form-group">
+            <input type="text" name="studentName" id="sName" placeholder="Student Name"><br>
+            <input type="text" name="studentAge" id="sAge" placeholder="Student Age"><br>
+            <input type="text" name="studentGender" id="sGender" placeholder="Student Gender"><br>
+            <input type="text" name="studentRollNumber" id="sRoll" placeholder="Student Roll Number"><br>
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="button" id="searchBtn">Search Student</button><br>
+        </div>
+        <div id="root"></div>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Roll Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <form id="editForm" style="display: none;">
+            <input type="text" id="editName" placeholder="Name">
+            <input type="text" id="editAge" placeholder="Age">
+            <input type="text" id="editGender" placeholder="Gender">
+            <input type="hidden" id="editRoll" placeholder="Roll Number">
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+
+</html>
