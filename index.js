@@ -115,5 +115,4 @@ function clearForm() {
     document.getElementById('sRoll').value = '';
 }
 
-// Initial display
 displayStudents();
